@@ -86,18 +86,6 @@ function getMonth(){
     }
 }
 
-//get and validate the day
-function getDay(){
-    let day = document.getElementById("day").value;
-    if(day > 0 && day<=31){
-    return day;
-    }else{
-        document.getElementById("day").value="";
-        alert (" Day must be between 1 - 31.");
-    
-    }
-}
-
 //get and validate the year
 function getYear(){
 
@@ -110,8 +98,19 @@ function getYear(){
     return year;
     }
 }
-// get the selected gender radio button
+// get gender
 function getGender(){    
     let gender = checkRadiobutton();
      return gender;
+}
+//get and validate the day
+function getDay(){
+    let day = document.getElementById("day").value;
+    if(day > 0 && day<=31){
+    return day;
+    }else{
+        document.getElementById("day").value="";
+        alert (" Day must be between 1 - 31.");
+    
+    }
 }
